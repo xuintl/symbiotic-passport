@@ -1,0 +1,26 @@
+{
+  "transitions": [
+    {
+      "type": "rural_to_urban",
+      "delta_scfa_proxy_per_month": -0.01,
+      "delta_diversity_per_month": -0.015,
+      "delta_westernization_score_per_month": 0.02
+    },
+    {
+      "type": "urban_to_rural",
+      "delta_scfa_proxy_per_month": 0.005,
+      "delta_diversity_per_month": 0.01,
+      "delta_westernization_score_per_month": -0.01
+    }
+  ],
+  "diet_modifiers": {
+    "keep_traditional": {
+      "scfa_multiplier": 0.5,
+      "diversity_multiplier": 0.5
+    },
+    "adopt_western": {
+      "scfa_multiplier": 1.5,
+      "diversity_multiplier": 1.5
+    }
+  }
+}

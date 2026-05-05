@@ -1,0 +1,37 @@
+[
+  {
+    "id": "increase_whole_grains",
+    "target_function": "SCFA buffer",
+    "mechanism": "Whole grains provide complex carbohydrates that are fermented into SCFAs by gut bacteria.",
+    "actions": [
+      "Include legumes or whole grains in at least one meal per day."
+    ],
+    "adjustments": {
+      "scfa_proxy": 0.1,
+      "diversity": 0.05,
+      "westernization_score": -0.05
+    },
+    "constraints": {
+      "diet": ["none", "vegetarian", "vegan"],
+      "effort_level": "medium"
+    }
+  },
+  {
+    "id": "add_fermented_foods",
+    "target_function": "Diversity boost",
+    "mechanism": "Fermented foods introduce transient microbes that can stimulate the native microbiome and increase diversity.",
+    "actions": [
+      "Add fermented vegetables 3x/week if culturally acceptable.",
+      "Consume kefir or unsweetened yogurt daily."
+    ],
+    "adjustments": {
+      "scfa_proxy": 0.05,
+      "diversity": 0.1,
+      "westernization_score": -0.02
+    },
+    "constraints": {
+      "diet": ["none", "vegetarian"],
+      "effort_level": "low"
+    }
+  }
+]

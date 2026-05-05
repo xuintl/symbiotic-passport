@@ -1,0 +1,212 @@
+{
+  "china_urban": {
+    "region_name": "China",
+    "region_id": "china_urban",
+    "n_samples": 6688,
+    "axes": {
+      "scfa_proxy": 0.352,
+      "westernization_score": 0.803,
+      "diversity_proxy": 0.659
+    },
+    "taxa_means": {
+      "Bacteroides": 14.85,
+      "Prevotella": 3.64,
+      "Faecalibacterium": 6.38
+    }
+  },
+  "japan_urban": {
+    "region_name": "Japan",
+    "region_id": "japan_urban",
+    "n_samples": 2942,
+    "axes": {
+      "scfa_proxy": 0.324,
+      "westernization_score": 0.859,
+      "diversity_proxy": 0.642
+    },
+    "taxa_means": {
+      "Bacteroides": 15.56,
+      "Prevotella": 2.55,
+      "Faecalibacterium": 6.23
+    }
+  },
+  "usa_urban": {
+    "region_name": "United States of America",
+    "region_id": "usa_urban",
+    "n_samples": 5797,
+    "axes": {
+      "scfa_proxy": 0.28,
+      "westernization_score": 0.837,
+      "diversity_proxy": 0.649
+    },
+    "taxa_means": {
+      "Bacteroides": 14.67,
+      "Prevotella": 2.86,
+      "Faecalibacterium": 5.66
+    }
+  },
+  "netherlands_urban": {
+    "region_name": "Netherlands",
+    "region_id": "netherlands_urban",
+    "n_samples": 1352,
+    "axes": {
+      "scfa_proxy": 0.275,
+      "westernization_score": 0.74,
+      "diversity_proxy": 0.678
+    },
+    "taxa_means": {
+      "Bacteroides": 6.52,
+      "Prevotella": 2.28,
+      "Faecalibacterium": 5.69
+    }
+  },
+  "italy_urban": {
+    "region_name": "Italy",
+    "region_id": "italy_urban",
+    "n_samples": 595,
+    "axes": {
+      "scfa_proxy": 0.363,
+      "westernization_score": 0.902,
+      "diversity_proxy": 0.629
+    },
+    "taxa_means": {
+      "Bacteroides": 8.14,
+      "Prevotella": 0.89,
+      "Faecalibacterium": 7.3
+    }
+  },
+  "uk_urban": {
+    "region_name": "United Kingdom",
+    "region_id": "uk_urban",
+    "n_samples": 233,
+    "axes": {
+      "scfa_proxy": 0.29,
+      "westernization_score": 0.865,
+      "diversity_proxy": 0.64
+    },
+    "taxa_means": {
+      "Bacteroides": 9.79,
+      "Prevotella": 1.52,
+      "Faecalibacterium": 6.43
+    }
+  },
+  "india_mix": {
+    "region_name": "India",
+    "region_id": "india_mix",
+    "n_samples": 433,
+    "axes": {
+      "scfa_proxy": 0.255,
+      "westernization_score": 0.218,
+      "diversity_proxy": 0.835
+    },
+    "taxa_means": {
+      "Bacteroides": 3.82,
+      "Prevotella": 13.7,
+      "Faecalibacterium": 4.6
+    }
+  },
+  "australia_urban": {
+    "region_name": "Australia",
+    "region_id": "australia_urban",
+    "n_samples": 537,
+    "axes": {
+      "scfa_proxy": 0.314,
+      "westernization_score": 0.854,
+      "diversity_proxy": 0.644
+    },
+    "taxa_means": {
+      "Bacteroides": 9.0,
+      "Prevotella": 1.54,
+      "Faecalibacterium": 6.4
+    }
+  },
+  "mali_rural": {
+    "region_name": "Mali",
+    "region_id": "mali_rural",
+    "n_samples": 24,
+    "axes": {
+      "scfa_proxy": 0.098,
+      "westernization_score": 0.84,
+      "diversity_proxy": 0.648
+    },
+    "taxa_means": {
+      "Bacteroides": 5.17,
+      "Prevotella": 0.99,
+      "Faecalibacterium": 2.16
+    }
+  },
+  "peru_rural": {
+    "region_name": "Peru",
+    "region_id": "peru_rural",
+    "n_samples": 24,
+    "axes": {
+      "scfa_proxy": 0.085,
+      "westernization_score": 0.787,
+      "diversity_proxy": 0.664
+    },
+    "taxa_means": {
+      "Bacteroides": 15.59,
+      "Prevotella": 4.22,
+      "Faecalibacterium": 1.97
+    }
+  },
+  "uae_urban": {
+    "region_name": "United Arab Emirates",
+    "region_id": "uae_urban",
+    "n_samples": 50,
+    "axes": {
+      "scfa_proxy": 0.314,
+      "westernization_score": 0.558,
+      "diversity_proxy": 0.733
+    },
+    "taxa_means": {
+      "Bacteroides": 15.74,
+      "Prevotella": 12.48,
+      "Faecalibacterium": 4.89
+    }
+  },
+  "egypt_mix": {
+    "region_name": "Egypt",
+    "region_id": "egypt_mix",
+    "n_samples": 32,
+    "axes": {
+      "scfa_proxy": 0.195,
+      "westernization_score": 0.551,
+      "diversity_proxy": 0.735
+    },
+    "taxa_means": {
+      "Bacteroides": 8.18,
+      "Prevotella": 6.66,
+      "Faecalibacterium": 2.64
+    }
+  },
+  "iran_mix": {
+    "region_name": "Iran",
+    "region_id": "iran_mix",
+    "n_samples": 9,
+    "axes": {
+      "scfa_proxy": 0.043,
+      "westernization_score": 0.344,
+      "diversity_proxy": 0.797
+    },
+    "taxa_means": {
+      "Bacteroides": 0.84,
+      "Prevotella": 1.59,
+      "Faecalibacterium": 0.66
+    }
+  },
+  "russia_mix": {
+    "region_name": "Russia",
+    "region_id": "russia_mix",
+    "n_samples": 55,
+    "axes": {
+      "scfa_proxy": 0.402,
+      "westernization_score": 0.761,
+      "diversity_proxy": 0.672
+    },
+    "taxa_means": {
+      "Bacteroides": 5.58,
+      "Prevotella": 1.76,
+      "Faecalibacterium": 7.37
+    }
+  }
+}
