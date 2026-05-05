@@ -4,7 +4,7 @@ Symbiotic Passport is an interactive, browser-based web tool designed to help us
 
 This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (OpenAI API) into a cohesive educational narrative.
 
-An extensive log details the development progress of the project ([progress log](/PROGRESS.md)). 
+An extensive [progress log](/PROGRESS.md) details the development of the project. 
 
 _**Video Demo**_
 
