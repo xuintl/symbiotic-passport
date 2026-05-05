@@ -2,7 +2,7 @@
 
 Symbiotic Passport is an interactive, browser-based web tool designed to help users explore how gut microbiome "functions" differ across global regions, how moving between those regions might shift those functions, and which precise, science-backed dietary habits can buffer those changes.
 
-This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (Gemini API) into a cohesive educational narrative.
+This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (OpenAI API) into a cohesive educational narrative.
 
 A detailed development progress log may be accessed [here](/PROGRESS.md).
 
@@ -16,7 +16,7 @@ A detailed development progress log may be accessed [here](/PROGRESS.md).
 
 **Simulation Logic:** Literature-derived priors dictating the physiological drift of Short-Chain Fatty Acid (SCFA) producers, microbial diversity, and "Westernization" (Bacteroides/Prevotella ratios) based on user diet choices over a 12-month migration.
 
-**Personalization:** A Gemini-powered "Microbiome Nutritionist" that provides highly specific, quantitative, and culturally relevant dietary bridging strategies.
+**Personalization:** An OpenAI-powered "Microbiome Nutritionist" that provides highly specific, quantitative, and culturally relevant dietary bridging strategies.
 
 ---
 
@@ -39,7 +39,7 @@ The application is structured into four distinct sequential functions:
 - **Actionable Metrics:** Displays clear habit cards detailing biological mechanisms, culinary actions, and exact expected quantitative boosts to functional axes.
 
 ### 4. Nutritionist (Function 3)
-- **Generative AI Integration:** Powered by the `gemini-2.5-flash` model.
+- **Generative AI Integration:** Powered by the `gpt-5.5` model.
 - **Culinary Bridging:** Analyzes the exact culinary shift between the Origin and Destination countries to suggest culturally relevant "bridging foods".
 - **Structured Output:** Delivers rich Markdown tables outlining macro/micro-nutrient shifts, affected taxa, and precise quantitative targets tailored to the user's specific health goal.
 
@@ -97,10 +97,10 @@ You are encouraged to confer with an AI model if you have encountered any issues
    ```
 
 4. **Set your API Key (For Function 3):**
-   To use the Microbiome Nutritionist, you need a Google Gemini API Key. You can either enter it directly into the application UI, or set it as an environment variable:
+   To use the Microbiome Nutritionist, you need an OpenAI API Key. You can either enter it directly into the application UI, or set it as an environment variable:
    
    ```bash
-   export GEMINI_API_KEY="your_api_key_here"
+   export OPENAI_API_KEY="your_api_key_here"
    ```
 
 ### Running the Application
@@ -147,4 +147,4 @@ The `global_atlas_regions.json` file is already included so the app runs instant
 **Tech Stack:**
 - [Streamlit](https://streamlit.io/) (Frontend & State Management)
 - [Plotly](https://plotly.com/python/) (Interactive Visualizations)
-- [Google Gemini API](https://ai.google.dev/) (Generative AI Nutritionist)
+- [OpenAI API](https://platform.openai.com/) (Generative AI Nutritionist)

@@ -52,14 +52,14 @@ This document serves as a historical record of the step-by-step development proc
   - Rendered visually distinct "Habit Cards" detailing mechanisms, actions, and quantitative axis adjustments using Streamlit metric badges.
 
 ## Phase 4: Integrating the AI Microbiome Nutritionist
-- **Objective:** Add a personalized, AI-driven deep-dive using the Gemini API.
+- **Objective:** Add a personalized, AI-driven deep-dive using the AI model API.
 - **Actions Taken:**
-  - Installed the `google-genai` SDK and resolved hot-reloading import conflicts by restarting the Streamlit environment.
+  - Installed the AI SDK and resolved hot-reloading import conflicts by restarting the Streamlit environment.
   - Added a new tab: "3. Microbiome Nutritionist".
-  - Designed an interface for the user to input their Gemini API key and select a primary health goal.
+  - Designed an interface for the user to input their API key and select a primary health goal.
   - Crafted a highly-structured prompt that ingested the Origin, Destination, Health Goal, and flagged risks.
   - *Iterative Improvement:* Enforced strict formatting in the prompt to require Markdown tables (for "Microbiome Impact" and "Intermediary Foods") and checklists for the "Quantitative Action Plan", making the AI output highly specific, clinical, and visually structured.
-  - Hooked the prompt up to the `gemini-2.5-flash` model utilizing the Google Search grounding tool for up-to-date dietary references.
+  - Hooked the prompt up to the AI model utilizing the Google Search grounding tool for up-to-date dietary references.
 
 ## Phase 5: Finalization & Documentation
 - **Objective:** Wrap up the project with comprehensive documentation.

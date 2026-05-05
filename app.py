@@ -4,8 +4,7 @@ import json
 import os
 import plotly.express as px
 import plotly.graph_objects as go
-from google import genai
-from google.genai import types
+from openai import OpenAI
 
 # --- Configuration ---
 st.set_page_config(
@@ -338,7 +337,7 @@ def render_global_atlas(atlas_data):
 
 def render_ai_nutritionist(atlas_data):
     st.header("Function 3: Nutritionist")
-    st.markdown("A highly specific, scientific deep-dive into your culinary microbial transition, powered by Gemini API.")
+    st.markdown("A highly specific, scientific deep-dive into your culinary microbial transition, powered by OpenAI API.")
     
     if not st.session_state.origin_region or not st.session_state.dest_region:
         st.warning("Please set both an Origin and a Destination region in the Global Atlas first!")
@@ -351,7 +350,7 @@ def render_ai_nutritionist(atlas_data):
     
     col1, col2 = st.columns(2)
     with col1:
-        api_key = st.text_input("Gemini API Key", type="password", placeholder="Enter your Gemini API key (optional if set in env)")
+        api_key = st.text_input("OpenAI API Key", type="password", placeholder="Enter your OpenAI API key (optional if set in env)")
     with col2:
         health_goal = st.selectbox("Your Primary Health Goal", [
             "Maximize SCFA Production (Gut Barrier Focus)", 
@@ -361,14 +360,14 @@ def render_ai_nutritionist(atlas_data):
         ])
         
     if st.button("Generate Personalized Nutrition Plan"):
-        if not api_key and not os.environ.get("GEMINI_API_KEY"):
-            st.error("Please provide a Gemini API key or set GEMINI_API_KEY in your environment.")
+        if not api_key and not os.environ.get("OPENAI_API_KEY"):
+            st.error("Please provide an OpenAI API key or set OPENAI_API_KEY in your environment.")
             return
             
         with st.spinner("Analyzing culinary shifts and generating personalized recommendations..."):
             try:
                 # Initialize client
-                client = genai.Client(api_key=api_key if api_key else os.environ.get("GEMINI_API_KEY"))
+                client = OpenAI(api_key=api_key if api_key else os.environ.get("OPENAI_API_KEY"))
                 
                 # Fetch risks if available
                 risks = st.session_state.get("identified_risks", [])
@@ -394,18 +393,15 @@ Your response MUST include the following structured sections:
 Format the output clearly using markdown headings, rich tables, bullet points, and bold text for scientific precision. Be actionable, down-to-earth, and highly specific. Do not use generic advice like "eat more vegetables."
 """
                 
-                response = client.models.generate_content(
-                    model='gemini-2.5-flash',
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        tools=[{"google_search": {}}],
-                        temperature=0.3
-                    )
+                response = client.responses.create(
+                    model='gpt-5-mini',
+                    input=prompt,
+                    tools=[{"type": "web_search"}]
                 )
                 
                 st.success("Plan Generated Successfully!")
                 st.markdown("---")
-                st.markdown(response.text)
+                st.markdown(response.output_text)
                 
             except Exception as e:
                 st.error(f"Error generating plan: {e}")
