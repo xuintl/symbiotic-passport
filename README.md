@@ -2,7 +2,9 @@
 
 Symbiotic Passport is an interactive, browser-based web tool designed to help users explore how gut microbiome "functions" differ across global regions, how moving between those regions might shift those functions, and which precise, science-backed dietary habits can buffer those changes.
 
-This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (OpenAI API) into a cohesive educational narrative. A detailed log details the development progress of the project ([progress log](/PROGRESS.md)).
+This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (OpenAI API) into a cohesive educational narrative.
+
+An extensive log details the development progress of the project ([progress log](/PROGRESS.md)). 
 
 _**Video Demo**_
 
