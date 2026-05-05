@@ -11,8 +11,11 @@ A detailed development progress log may be accessed [here](/PROGRESS.md).
 ## 🎯 Scope and Goals
 
 **Target Scope:** Single-user, interactive UI designed for educational value and biological transparency.
+
 **Data Foundation:** Real microbiome taxonomic profiles aggregated from the GMrepo REST API, heavily synthesized to run instantly on the client side.
+
 **Simulation Logic:** Literature-derived priors dictating the physiological drift of Short-Chain Fatty Acid (SCFA) producers, microbial diversity, and "Westernization" (Bacteroides/Prevotella ratios) based on user diet choices over a 12-month migration.
+
 **Personalization:** A Gemini-powered "Microbiome Nutritionist" that provides highly specific, quantitative, and culturally relevant dietary bridging strategies.
 
 ---
@@ -71,26 +74,31 @@ You are encouraged to confer with an AI model if you have encountered any issues
 ### Local Installation
 
 1. **Clone the repository and enter the directory:**
+   
    ```bash
    cd symbiotic_passport
    ```
 
-2. **Create a virtual environment and install dependencies:**
+3. **Create a virtual environment and install dependencies:**
    Using `uv` (faster):
+   
    ```bash
    uv venv
    source .venv/bin/activate
    uv pip install -r requirements.txt
    ```
+   
    Or using standard `pip`:
+   
    ```bash
    python -m venv .venv
    source .venv/bin/activate
    pip install -r requirements.txt
    ```
 
-3. **Set your API Key (For Function 3):**
+4. **Set your API Key (For Function 3):**
    To use the Microbiome Nutritionist, you need a Google Gemini API Key. You can either enter it directly into the application UI, or set it as an environment variable:
+   
    ```bash
    export GEMINI_API_KEY="your_api_key_here"
    ```
@@ -98,9 +106,11 @@ You are encouraged to confer with an AI model if you have encountered any issues
 ### Running the Application
 
 Launch the interactive Streamlit server:
+
 ```bash
 streamlit run app.py
 ```
+
 The application will automatically open in your default web browser at `http://localhost:8501`.
 
 ---
@@ -111,9 +121,11 @@ The `global_atlas_regions.json` file is already included so the app runs instant
 
 1. Ensure your virtual environment is active.
 2. Run the aggregation script:
+   
    ```bash
    python build_atlas.py
    ```
+   
 *Note: This script makes hundreds of API calls to GMrepo to fetch taxonomic abundances and averages them. It takes a few minutes to complete.*
 
 ---
