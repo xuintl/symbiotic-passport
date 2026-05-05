@@ -2,11 +2,11 @@
 
 Symbiotic Passport is an interactive, browser-based web tool designed to help users explore how gut microbiome "functions" differ across global regions, how moving between those regions might shift those functions, and which precise, science-backed dietary habits can buffer those changes.
 
-This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (OpenAI API) into a cohesive educational narrative.
+This project was built to demonstrate the integration of live database mining ([GMrepo](https://gmrepo.humangut.info/)), literature-derived scientific priors, and generative AI (OpenAI API) into a cohesive educational narrative. A detailed log details the development progress of the project ([progress log](/PROGRESS.md)).
 
-A detailed development progress log may be accessed [here](/PROGRESS.md).
+_**Video Demo**_
 
----
+[![Video Link](https://img.youtube.com/vi/q5T3goYcvDs/0.jpg)](https://www.youtube.com/watch?v=q5T3goYcvDs)
 
 ## 🎯 Scope and Goals
 
@@ -18,9 +18,9 @@ A detailed development progress log may be accessed [here](/PROGRESS.md).
 
 **Personalization:** An OpenAI-powered "Microbiome Nutritionist" that provides highly specific, quantitative, and culturally relevant dietary bridging strategies.
 
----
 
-## ✨ Features
+
+## 📝 Features
 
 The application is structured into four distinct sequential functions:
 
@@ -43,7 +43,7 @@ The application is structured into four distinct sequential functions:
 - **Culinary Bridging:** Analyzes the exact culinary shift between the Origin and Destination countries to suggest culturally relevant "bridging foods".
 - **Structured Output:** Delivers rich Markdown tables outlining macro/micro-nutrient shifts, affected taxa, and precise quantitative targets tailored to the user's specific health goal.
 
----
+
 
 ## 📂 Project Structure
 
@@ -61,7 +61,7 @@ symbiotic_passport/
 │   │   └── habit_rules.json           # Constraint-based intervention database
 ```
 
----
+
 
 ## 🚀 Setup and Development
 
@@ -113,7 +113,7 @@ streamlit run app.py
 
 The application will automatically open in your default web browser at `http://localhost:8501`.
 
----
+
 
 ## 🧬 Data Pipeline (Re-building the Atlas)
 
@@ -128,7 +128,7 @@ The `global_atlas_regions.json` file is already included so the app runs instant
    
 *Note: This script makes hundreds of API calls to GMrepo to fetch taxonomic abundances and averages them. It takes a few minutes to complete.*
 
----
+
 
 ## 📚 Resources and References
 
